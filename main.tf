@@ -8,13 +8,11 @@ terraform {
 }
 #AWS PROVIDER
 provider "aws" {
-  region     = "us-west-2"
+  region     = "us-east-1"
   alais = "module"
-  shared_credentails_files = [/user]
   profile = "staging"
-
 }
-resource "aws_ebs_volume" "example" {
+resource "aws_ebs_volume" "HDD" {
   availability_zone = "us-west-2a"
   size              = 40
 
