@@ -30,7 +30,7 @@ resource "aws_ebs_volume" "ec2_instance1" {
 
   tags = {
     Terraform   = "true"
-    Environment = "dev"
+    Environment = "sating"
   }
 }
 
